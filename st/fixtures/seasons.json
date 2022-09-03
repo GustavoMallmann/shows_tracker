@@ -1,0 +1,35 @@
+[
+  {
+    "model": "st.Season",
+    "pk": 1,
+    "fields": {
+      "show": 1,
+      "name": "ragnar",
+      "description": "valhalla",
+      "imdb_rating": 8.2,
+      "number": 1
+    }
+  },
+  {
+    "model": "st.Season",
+    "pk": 2,
+    "fields": {
+      "show": 1,
+      "name": "warrr",
+      "description": "aadsasf",
+      "imdb_rating": 8.8,
+      "number": 2
+    }
+  },
+  {
+    "model": "st.Season",
+    "pk": 1,
+    "fields": {
+      "show": 2,
+      "name": "eleven",
+      "description": "upside",
+      "imdb_rating": 8,
+      "number": 1
+    }
+  }
+]

@@ -1,0 +1,15 @@
+[
+  {
+    "model": "st.User_show_info",
+    "pk": 1,
+    "fields": {
+      "show": 1,
+      "user_rating": 10,
+      "last_episode_seen": 10,
+      "last_season_seen": 5,
+      "seen_all_available": true,
+      "user_comment": "a melhor",
+      "favorite_episode": 1
+    }
+  }
+]

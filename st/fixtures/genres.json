@@ -1,0 +1,16 @@
+[
+  {
+    "model": "st.Genre",
+    "pk": 1,
+    "fields": {
+      "name": "Action"
+    }
+  },
+  {
+    "model": "st.Genre",
+    "pk": 2,
+    "fields": {
+      "name": "Adventure"
+    }
+  }
+]

@@ -1,0 +1,41 @@
+[
+  {
+    "model": "st.Show",
+    "pk": 1,
+    "fields": {
+      "name": "Breaking Bad",
+      "description": "they're minerals",
+      "imdb_rating": 9.5,
+      "n_of_seasons": 5,
+      "n_of_episodes": 50,
+      "has_ended": true,
+      "genre": [1]
+    }
+  },
+  {
+    "model": "st.Show",
+    "pk": 2,
+    "fields": {
+      "name": "Stranger Things",
+      "description": "demogorgon",
+      "imdb_rating": 8.2,
+      "n_of_seasons": 3,
+      "n_of_episodes": 25,
+      "has_ended": false,
+      "genre": [1, 2]
+    }
+  },
+  {
+    "model": "st.Show",
+    "pk": 3,
+    "fields": {
+      "name": "Better Call Saul",
+      "description": "Chicanery",
+      "imdb_rating": 9.6,
+      "n_of_seasons": 6,
+      "n_of_episodes": 60,
+      "has_ended": 1,
+      "genre": [1]
+    }
+  }
+]

@@ -1,0 +1,35 @@
+[
+  {
+    "model": "st.Episode",
+    "pk": 1,
+    "fields": {
+      "season": 1,
+      "name": "inicio",
+      "description": "primeiro ep",
+      "imdb_rating": 8.7,
+      "number": 1
+    }
+  },
+  {
+    "model": "st.Episode",
+    "pk": 2,
+    "fields": {
+      "season": 1,
+      "name": "seg ep",
+      "description": "lplppl",
+      "imdb_rating": 8.3,
+      "number": 2
+    }
+  },
+  {
+    "model": "st.Episode",
+    "pk": 3,
+    "fields": {
+      "season": 2,
+      "name": "inicio seg temp",
+      "description": "segtemp",
+      "imdb_rating": 8.1,
+      "number": 1
+    }
+  }
+]
