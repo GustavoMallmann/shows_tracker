@@ -1,4 +1,4 @@
 db.sqlite3
 *__init__.py
 *__pycache__
-secrets.py
+user_secrets.py

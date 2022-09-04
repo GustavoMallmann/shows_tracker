@@ -1,0 +1,7 @@
+<p>Are you sure you want to delete your info about {{item.show}}?</p>
+<form method="POST" action="{% url 'delete_show_info' item.show %}">
+  {% csrf_token %}
+  <a href="{% url 'my_show_info' item.show %}">Cancel</a>
+  &emsp;
+  <input type="submit" name="Delete" value="Delete" />
+</form>

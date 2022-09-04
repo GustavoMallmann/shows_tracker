@@ -1,7 +1,8 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.http import HttpResponse
 from .models import *
 from .views_helper import *
+from .forms import *
 # Create your views here.
 
 def home(request):
@@ -33,7 +34,7 @@ def show(request, name):
     context = prepare_context(show)
     return render(request, funct_name_html(), {"show":context}) 
 
-def myshowinfo(request, name):
+def my_show_info(request, name):
 
     show_pk = Show.objects.get(name=name).pk
     show_info = User_show_info.objects.get(show=show_pk)
@@ -75,3 +76,35 @@ def delete_show():
 
 def settings():
     pass
+
+def add_show_info(request):
+
+    form = User_show_info_form()
+    if request.method == 'POST':
+        form = User_show_info_form(request.POST)
+        if form.is_valid():
+            form.save()
+            return redirect('')
+    context = {"form": form}
+    return render(request, funct_name_html(), context)
+
+def edit_show_info(request, pk):
+
+    obj = User_show_info.objects.get(id=pk)
+    form = User_show_info_form(instance=obj)
+    if request.method == 'POST':
+        form = User_show_info_form(request.POST, instance=obj)
+        if form.is_valid():
+            form.save()
+            return redirect('')
+    context = {"form": form}
+    return render(request, funct_name_html(), context)
+
+def delete_show_info(request, name):
+
+    obj = User_show_info.objects.get(show=name)
+    if request.method == 'POST':
+        obj.delete()
+        redirect('shows')
+    context = {"item": obj}
+    return render(request, funct_name_html(), context)
